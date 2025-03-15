@@ -51,7 +51,7 @@ export default defineConfig((ctx) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      publicPath: ctx.prod ? '/~66160196/' : '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
@@ -116,7 +116,7 @@ export default defineConfig((ctx) => {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['Notify', 'LocalStorage', 'SessionStorage','Loading'],
+      plugins: ['Notify', 'LocalStorage', 'SessionStorage', 'Loading'],
     },
 
     // animations: 'all', // --- includes all animations
